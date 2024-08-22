@@ -36,31 +36,4 @@ O código calcula a distância entre os centros dos dois círculos e verifica se
 ## Implementação
 
 O código está implementado na classe `FlorSamambaia`. O método principal (`main`) solicita a entrada do usuário e chama o método `tentativaDesenhar` para determinar o resultado.
-
-### Exemplo de Código
-
-```java
-public class FlorSamambaia {
-
-    public static String tentativaDesenhar(int r1, int x1, int y1, int r2, int x2, int y2) {
-        double distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-
-        if (distancia + r2 <= r1) {
-            return "RICO"; // O caçador consegue colher a flor
-        } else {
-            return "MORTO"; // O caçador falha e morre
-        }
-    }
-
-    public static void main(String[] args) {
-        // Código para receber entrada do usuário e exibir resultado
-    }
-}
-
-"MORTO" se o caçador falha em colher a flor.
-"RICO" se o caçador consegue colher a flor.
-Lógica do Código
-O código calcula a distância entre os centros dos dois círculos e verifica se o círculo do caçador cobre completamente o círculo da flor. Se a soma da distância e do raio da flor for menor ou igual ao raio do caçador, o caçador consegue colher a flor.
-
-Implementação
-O código está implementado na classe FlorSamambaia. O método principal (main) solicita a entrada do usuário e chama o método tentativaDesenhar para determinar o resultado.
+tado na classe FlorSamambaia. O método principal (main) solicita a entrada do usuário e chama o método tentativaDesenhar para determinar o resultado.
